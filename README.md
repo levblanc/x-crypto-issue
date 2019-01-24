@@ -27,7 +27,7 @@ But when I run `go run main.go`, it took me around 30 seconds to print out the r
 
 Then I created the `vendor` folder and tried the `-mod=vendor` flag with `go run`, and it worked well!
 
-## Reason
+## Reason (?)
 
 I digged into the `bcrypt.go` source code, and found that it was importing `golang.org/x/crypto/blowfish`,
 
@@ -39,6 +39,6 @@ which is not in my pkg path, because I alias crypto to the github mirror:
 
 While in the `vendor` folder, `blowfish` is downloaded.
 
-And I am guessing this might be the reason of the time difference?
+And I am guessing this might be the reason for the time difference?
 
-I've seen the `go mod init` command adding subdependencies into `go.mod`, and why is this not the case for `blowfish`？
+I've seen the `go mod init` command adding sub-dependencies into `go.mod`, and why is this not the case for `blowfish`？
