@@ -1,8 +1,8 @@
 ## Reproducing the problem
 
-The sample code is simple. It just requires `bcrypt` and prints out a hash.
+The sample code is simple. It just imports `bcrypt` and prints out a hash.
 
-Try to run `go run main.go` and `go run -mod=vendor main.go` to feel the time difference.
+Try running `go run main.go` and `go run -mod=vendor main.go` to feel the time difference.
 
 ## Problem
 
